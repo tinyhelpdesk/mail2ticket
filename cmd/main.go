@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"tinyhelpdesk/internal/util"
 	mail "tinyhelpdesk/pkg"
 )
 
@@ -12,6 +13,8 @@ func main() {
 		log.Fatal(err)
 	}
 	defer ms.Close()
+
+	util.NewDatabase()
 
 	nm := make(chan *mail.Mail)
 	ms.Subscribe(nm)
