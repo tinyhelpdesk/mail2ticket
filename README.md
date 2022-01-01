@@ -1,3 +1,3 @@
-# TinyHelpdesk
+# mail2ticket
 
-TinyHelpdesk converts emails to tickets. Only unread messages are downloaded and marked as read from the mail server.
+mail2ticket converts emails to tickets. Only unread messages are downloaded and marked as read from the mail server.
